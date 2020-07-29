@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="471.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joselopez.sistema.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnmasmenos" layoutX="15.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="±" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncero" layoutX="75.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="0" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnpunto" layoutX="135.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="." textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnigual" layoutX="195.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="=" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnuno" layoutX="14.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="1" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndos" layoutX="74.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="2" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btntres" layoutX="135.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="3" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsuma" layoutX="195.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="+" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncuatro" layoutX="14.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="4" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncinco" layoutX="75.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="5" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnseis" layoutX="135.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="6" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsiete" layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="7" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnresta" layoutX="195.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="-" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnocho" layoutX="75.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="8" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnnueve" layoutX="135.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="9" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnmultiplicacion" layoutX="195.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="*" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCE" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="CE" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnC" layoutX="74.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="C" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnunoequis" layoutX="134.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="1/x" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndivision" layoutX="194.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="/" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnraiz" layoutX="258.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="109.0" prefWidth="50.0" text="√" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnpotencia" layoutX="258.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="115.0" prefWidth="50.0" text="x²" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnporcentaje" layoutX="258.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" text="\%" textFill="#ff1500">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#a1a1a1" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtValores" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="51.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="93.0" prefWidth="297.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+         </font>
+      </TextField>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Tipo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cientifica" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca De">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Programador:" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#ab0704" />
+               </light>
+            </Lighting>
+         </effect>
+      </MenuBar>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
